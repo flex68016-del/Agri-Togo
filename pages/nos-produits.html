@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nos Cultivations | AGRI-TOGO</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <!-- Header avec navigation -->
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <img src="../images/logo.png" alt="AGRI-TOGO">
+                <span class="logo-text">AGRI-TOGO</span>
+            </div>
+            <button class="hamburger" aria-label="Menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-links">
+                <li><a href="../index.html">Accueil</a></li>
+                <li><a href="a-propos.html">À propos</a></li>
+                <li><a href="nos-produits.html" class="active">Nos produits</a></li>
+                <li><a href="actualites.html">Actualités</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Header de page -->
+        <section class="page-header">
+            <h1>Nos cultivations</h1>
+            <p>Des produits du terroir togolais, cultivés avec passion et respect</p>
+        </section>
+
+        <!-- Section filtres par catégorie de produits -->
+        <section class="products-filter">
+            <h2>Filtrer par catégorie</h2>
+            <div class="filter-buttons">
+                <button class="filter-btn active" data-filter="all">Tous</button>
+                <button class="filter-btn" data-filter="cereales">Céréales</button>
+                <button class="filter-btn" data-filter="tubercules">Tubercules</button>
+                <button class="filter-btn" data-filter="fruits">Fruits</button>
+                <button class="filter-btn" data-filter="transformes">Transformés</button>
+            </div>
+        </section>
+
+        <!-- Galerie de produits avec carrousel -->
+        <section class="products-gallery">
+            <div class="carousel-container">
+                <button class="carousel-btn prev" aria-label="Précédent">&lt;</button>
+                <div class="carousel-track">
+                    <!-- Produit 1: Maïs -->
+                    <div class="product-card" data-category="cereales">
+                        <img src="../images/mais.jpg" alt="Maïs">
+                        <div class="product-info">
+                            <h3>Maïs Jaune des Plateaux</h3>
+                            <p>Variété locale adaptée aux climats togolais, riche en protéines et idéal pour la préparation de pâte traditionnelle.</p>
+                            <span class="product-category">Céréales</span>
+                        </div>
+                    </div>
+                    <!-- Produit 2: Manioc -->
+                    <div class="product-card" data-category="tubercules">
+                        <img src="../images/manioc.jpg" alt="Manioc">
+                        <div class="product-info">
+                            <h3>Manioc Doux Coastal</h3>
+                            <p>Cultivé sur les terres sablonneuses de la région Maritime, faible en cyanure et excellent pour la consommation directe.</p>
+                            <span class="product-category">Tubercules</span>
+                        </div>
+                    </div>
+                    <!-- Produit 3: Ananas -->
+                    <div class="product-card" data-category="fruits">
+                        <img src="../images/ananas.jpg" alt="Ananas">
+                        <div class="product-info">
+                            <h3>Ananas Victoria Togo</h3>
+                            <p>Variété locale reconnue pour sa chair juteuse et son taux élevé de sucre naturel, récolté à maturité parfaite.</p>
+                            <span class="product-category">Fruits</span>
+                        </div>
+                    </div>
+                    <!-- Produit 4: Gari -->
+                    <div class="product-card" data-category="transformes">
+                        <img src="../images/gari.jpg" alt="Gari">
+                        <div class="product-info">
+                            <h3>Gari Artisanal Premium</h3>
+                            <p>Semoule de manioc fermentée selon la méthode traditionnelle, toastée au feu de bois pour un goût authentique.</p>
+                            <span class="product-category">Transformés</span>
+                        </div>
+                    </div>
+                    <!-- Produit 5: Farine de manioc -->
+                    <div class="product-card" data-category="transformes">
+                        <img src="../images/farine-manioc.jpg" alt="Farine de manioc">
+                        <div class="product-info">
+                            <h3>Tapioca de Manioc</h3>
+                            <p>Farine extra-fine obtenue par séchage solaire, sans additifs, parfaite pour bouillies et pâtisseries locales.</p>
+                            <span class="product-category">Transformés</span>
+                        </div>
+                    </div>
+                    <!-- Produit 6: Jus d'ananas -->
+                    <div class="product-card" data-category="fruits">
+                        <img src="../images/jus-ananas.jpg" alt="Jus d'ananas">
+                        <div class="product-info">
+                            <h3>Nectar d'Ananas 100%</h3>
+                            <p>Jus pressé à froid, pasteurisé naturellement, sans sucre ajouté ni conservateur, conditionné dans nos ateliers locaux.</p>
+                            <span class="product-category">Transformés</span>
+                        </div>
+                    </div>
+                    <!-- Produit 7: Farine de maïs -->
+                    <div class="product-card" data-category="cereales">
+                        <img src="../images/farine-mais.jpg" alt="Farine de maïs">
+                        <div class="product-info">
+                            <h3>Farine de Maïs Blanc</h3>
+                            <p>Moulue sur pierre pour conserver le germe, riche en fibres et nutriments, idéale pour akplé et tokpa.</p>
+                            <span class="product-category">Transformés</span>
+                        </div>
+                    </div>
+                    <!-- Produit 8: Maïs grain -->
+                    <div class="product-card" data-category="cereales">
+                        <img src="../images/mais-grain.jpg" alt="Maïs grain">
+                        <div class="product-info">
+                            <h3>Maïs Grain Sélection</h3>
+                            <p>Grains triés à la main, séchés au soleil, conservés dans nos greniers traditionnels pour une qualité optimale.</p>
+                            <span class="product-category">Céréales</span>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-btn next" aria-label="Suivant">&gt;</button>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer identique à toutes les pages -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>AGRI-TOGO</h3>
+                <p>Pour une agriculture togolaise durable et prospère</p>
+            </div>
+            <div class="footer-section">
+                <h3>Navigation</h3>
+                <ul>
+                    <li><a href="../index.html">Accueil</a></li>
+                    <li><a href="a-propos.html">Notre histoire</a></li>
+                    <li><a href="nos-produits.html">Nos cultivations</a></li>
+                    <li><a href="contact.html">Nous écrire</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Coordonnées</h3>
+                <p>Siège social : Lomé, Togo</p>
+                <p>Courriel : cooperation@agri-togo.tg</p>
+                <p>Téléphone : +228 22 00 11 00</p>
+                <p><a href="https://maps.app.goo.gl/mjLLKNpsAV3gKmQQ9" target="_blank" style="color: #FFC107;">Voir sur Google Maps</a></p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 AGRI-TOGO. Cultivons l'avenir ensemble.</p>
+        </div>
+    </footer>
+
+    <script src="../js/script.js"></script>
+</body>
+</html>

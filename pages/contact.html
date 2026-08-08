@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contactez-nous | AGRI-TOGO</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <!-- Header avec navigation -->
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <img src="../images/logo.png" alt="AGRI-TOGO">
+                <span class="logo-text">AGRI-TOGO</span>
+            </div>
+            <button class="hamburger" aria-label="Menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-links">
+                <li><a href="../index.html">Accueil</a></li>
+                <li><a href="a-propos.html">À propos</a></li>
+                <li><a href="nos-produits.html">Nos produits</a></li>
+                <li><a href="actualites.html">Actualités</a></li>
+                <li><a href="contact.html" class="active">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Header de page -->
+        <section class="page-header">
+            <h1>Échangeons ensemble</h1>
+            <p>Pour toute collaboration, question ou opportunité, notre équipe vous répond</p>
+        </section>
+
+        <!-- Section contact avec informations et formulaire -->
+        <section class="contact-container">
+            <!-- Informations de contact -->
+            <div class="contact-info">
+                <h2>Nos informations</h2>
+                <div class="info-item">
+                    <h3>Siège social</h3>
+                    <p>Quartier Kodjoviakopé, Lomé, Togo</p>
+                    <p>Proche du marché central</p>
+                </div>
+                <div class="info-item">
+                    <h3>Téléphones</h3>
+                    <p>+228 22 00 11 00 (Administration)</p>
+                    <p>+228 99 88 77 66 (Service commercial)</p>
+                </div>
+                <div class="info-item">
+                    <h3>Adresses électroniques</h3>
+                    <p>cooperation@agri-togo.tg (Partenariats)</p>
+                    <p>commandes@agri-togo.tg (Commandes)</p>
+                </div>
+                <div class="info-item">
+                    <h3>Disponibilité</h3>
+                    <p>Lundi - Vendredi: 7h30 - 18h00</p>
+                    <p>Samedi: 8h00 - 14h00</p>
+                </div>
+            </div>
+
+            <!-- Formulaire de contact -->
+            <div class="contact-form-container">
+                <h2>Formulaire de contact</h2>
+                <form id="contactForm" class="contact-form">
+                    <div class="form-group">
+                        <label for="name">Votre nom complet *</label>
+                        <input type="text" id="name" name="name" placeholder="Entrez votre nom et prénom" required>
+                        <span class="error-message"></span>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Votre adresse email *</label>
+                        <input type="email" id="email" name="email" placeholder="exemple@email.com" required>
+                        <span class="error-message"></span>
+                    </div>
+                    <div class="form-group">
+                        <label for="subject">Motif de votre contact *</label>
+                        <select id="subject" name="subject" required>
+                            <option value="">Choisissez un motif</option>
+                            <option value="commande">Commande de produits agricoles</option>
+                            <option value="partenariat">Proposition de partenariat</option>
+                            <option value="investissement">Opportunité d'investissement</option>
+                            <option value="presse">Demande média/presse</option>
+                            <option value="autre">Autre demande</option>
+                        </select>
+                        <span class="error-message"></span>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Votre message *</label>
+                        <textarea id="message" name="message" rows="5" placeholder="Décrivez votre demande en détail..." required></textarea>
+                        <span class="error-message"></span>
+                    </div>
+                    <button type="submit" class="submit-btn">Transmettre mon message</button>
+                </form>
+                <!-- Message de succès (caché par défaut) -->
+                <div id="formSuccess" class="success-message" style="display: none;">
+                    <p>Message transmis avec succès ! Notre équipe vous répondra sous 48 heures.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section carte Google Maps -->
+        <section class="map-section">
+            <h2>Nous trouver</h2>
+            <div class="map-container">
+                <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d158858.47308446734!2d1.1234!3d6.2234!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1023550b4c4e4e4e%3A0x4c5e5e5e5e5e5e5e!2sLom%C3%A9%2C+Togo!5e0!3m2!1sfr!2stg!4v1580000000000!5m2!1sfr!2stg!4v1580000000000" 
+                    width="100%" 
+                    height="300" 
+                    style="border:0; border-radius: 8px;" 
+                    allowfullscreen="" 
+                    loading="lazy">
+                </iframe>
+                <p style="text-align: center; margin-top: 15px;">
+                    <a href="https://maps.app.goo.gl/mjLLKNpsAV3gKmQQ9" target="_blank" style="color: #1B5E20; font-weight: bold; text-decoration: underline;">
+                        Ouvrir dans Google Maps
+                    </a>
+                </p>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer identique à toutes les pages -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>AGRI-TOGO</h3>
+                <p>Pour une agriculture togolaise durable et prospère</p>
+            </div>
+            <div class="footer-section">
+                <h3>Navigation</h3>
+                <ul>
+                    <li><a href="../index.html">Accueil</a></li>
+                    <li><a href="a-propos.html">Notre histoire</a></li>
+                    <li><a href="nos-produits.html">Nos cultivations</a></li>
+                    <li><a href="contact.html">Nous écrire</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Coordonnées</h3>
+                <p>Siège social : Lomé, Togo</p>
+                <p>Courriel : cooperation@agri-togo.tg</p>
+                <p>Téléphone : +228 22 00 11 00</p>
+                <p><a href="https://maps.app.goo.gl/mjLLKNpsAV3gKmQQ9" target="_blank" style="color: #FFC107;">Voir sur Google Maps</a></p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 AGRI-TOGO. Cultivons l'avenir ensemble.</p>
+        </div>
+    </footer>
+
+    <script src="../js/script.js"></script>
+</body>
+</html>
